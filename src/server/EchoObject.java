@@ -23,7 +23,7 @@ public class EchoObject implements EchoInt {
      String fecha = DateFormat.getTimeInstance(3,Locale.FRANCE).format(h);
      String ret = myURL + ":" + fecha + "> " +  input;
      try {
-           Thread.sleep(15000);  ret = ret + " (retrasada 3 segundos)";
+           Thread.sleep(3000);  ret = ret + " (retrasada 3 segundos)";
      } catch (InterruptedException e) {}
 
      return ret;
